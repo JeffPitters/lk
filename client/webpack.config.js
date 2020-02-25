@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const path = require("path");
 
@@ -6,7 +6,7 @@ module.exports = {
 	entry: "./app/index.js",
 	mode: "development",
 	output: {
-    	filename: "/public/bundle.js"
+    	filename: "public/bundle.js"
   	},
   	devServer: {
     	contentBase: path.join(__dirname, "dist"),

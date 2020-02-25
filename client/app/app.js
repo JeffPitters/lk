@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 import React, {Component} from "react";
 import Modal from './login.js';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
+// import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 
 //class Store {
 // @observable modal = {
