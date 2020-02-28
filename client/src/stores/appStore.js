@@ -9,7 +9,7 @@ export default class appStore {
     constructor() {
         this.startPageStore = new startPageStore();
         //this.loginDialogStore = new loginDialogStore();
-        //this.clientCardStore = new clientCardStore();
+        this.clientCardStore = new clientCardStore();
         //this.chatStore = new chatStore();
     };
 

@@ -1,9 +1,8 @@
 'use strict';
 
 import React, {Component} from "react";
-import {observable} from "mobx";
-import {observer} from "mobx-react";
-import styled from "styled-components"
+import {observer, inject} from "mobx-react";
+import styled from "styled-components";
 
 class Tab extends Component {
     render() {
@@ -39,45 +38,6 @@ const ModalInput = styled(Input)`
   display: flex;
   align-self: center;
   font-weight: bold
-`
-
-class Button extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {text: props.text};
-		//this.state = {action: props.actionCallback}
-	}
-
-	render() {
-		return (
-			<button className={this.props.className}>
-			   {this.state.text}
-			</button>
-		)
-	}
-}
-
-const ModalButton = styled(Button)`
-  &:hover {
-  	background-color:#04c;
-  	transition: background-position .1s linear;
-  }
-  font-size: 14px;
-  font-family: "Verdana";
-  text-align: center !important;
-  text-decoration: none;
-  background-image: linear-gradient(to bottom,#08c,#04c);
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-  cursor: pointer;
-  color: #fff;
-  width: 50%;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  height: 30px;
 `
 
 class Header extends Component {
